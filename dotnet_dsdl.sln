@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commons.Xml.Relaxng", "Commons.Xml.Relaxng\Commons.Xml.Relaxng.csproj", "{60803359-E835-481F-B789-6C486DA40E9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commons.Xml.Relaxng.Tests", "Commons.Xml.Relaxng.Tests\Commons.Xml.Relaxng.Tests.csproj", "{FD869AC5-8466-482C-B9AA-E3EC76ECE2E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commons.Xml.Relaxng_PCL", "Commons.Xml.Relaxng_PCL\Commons.Xml.Relaxng_PCL.csproj", "{ED756043-9632-494E-94E0-98A98543E082}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60803359-E835-481F-B789-6C486DA40E9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60803359-E835-481F-B789-6C486DA40E9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60803359-E835-481F-B789-6C486DA40E9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60803359-E835-481F-B789-6C486DA40E9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD869AC5-8466-482C-B9AA-E3EC76ECE2E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD869AC5-8466-482C-B9AA-E3EC76ECE2E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD869AC5-8466-482C-B9AA-E3EC76ECE2E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD869AC5-8466-482C-B9AA-E3EC76ECE2E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED756043-9632-494E-94E0-98A98543E082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED756043-9632-494E-94E0-98A98543E082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED756043-9632-494E-94E0-98A98543E082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED756043-9632-494E-94E0-98A98543E082}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

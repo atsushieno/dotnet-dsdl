@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60803359-E835-481F-B789-6C486DA40E9E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Commons.Xml.Relaxng</RootNamespace>
+    <AssemblyName>Commons.Xml.Relaxng</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Commons.Xml\XmlDefaultReader.cs" />
+    <Compile Include="Commons.Xml.Nvdl\NvdlBuiltInValidationProvider.cs" />
+    <Compile Include="Commons.Xml.Nvdl\NvdlCompileContext.cs" />
+    <Compile Include="Commons.Xml.Nvdl\NvdlConfig.cs" />
+    <Compile Include="Commons.Xml.Nvdl\NvdlException.cs" />
+    <Compile Include="Commons.Xml.Nvdl\NvdlFilteredXmlReader.cs" />
+    <Compile Include="Commons.Xml.Nvdl\NvdlReader.cs" />
+    <Compile Include="Commons.Xml.Nvdl\NvdlRelaxngSupport.cs" />
+    <Compile Include="Commons.Xml.Nvdl\NvdlSimplified.cs" />
+    <Compile Include="Commons.Xml.Nvdl\NvdlStructures.cs" />
+    <Compile Include="Commons.Xml.Nvdl\NvdlValidatingReader.cs" />
+    <Compile Include="Commons.Xml.Nvdl\NvdlValidationProvider.cs" />
+    <Compile Include="Commons.Xml.Nvdl\NvdlValidator.cs" />
+    <Compile Include="Commons.Xml.Nvdl\NvdlXsdSupport.cs" />
+    <Compile Include="Commons.Xml.Relaxng.Derivative\RdpContentType.cs" />
+    <Compile Include="Commons.Xml.Relaxng.Derivative\RdpNameClasses.cs" />
+    <Compile Include="Commons.Xml.Relaxng.Derivative\RdpObjects.cs" />
+    <Compile Include="Commons.Xml.Relaxng.Derivative\RdpPatterns.cs" />
+    <Compile Include="Commons.Xml.Relaxng.Derivative\Util.cs" />
+    <Compile Include="Commons.Xml.Relaxng.Inference\RelaxngInference.cs" />
+    <Compile Include="Commons.Xml.Relaxng.Rnc\RncParser.cs" />
+    <Compile Include="Commons.Xml.Relaxng.Rnc\RncTokenizer.cs" />
+    <Compile Include="Commons.Xml.Relaxng.Rnc\RncWriter.cs" />
+    <Compile Include="Commons.Xml.Relaxng.Rnc\XmlChar.cs" />
+    <Compile Include="Commons.Xml.Relaxng\Misc.cs" />
+    <Compile Include="Commons.Xml.Relaxng\RelaxngDatatype.cs" />
+    <Compile Include="Commons.Xml.Relaxng\RelaxngDatatypeProvider.cs" />
+    <Compile Include="Commons.Xml.Relaxng\RelaxngDefaultDatatypes.cs" />
+    <Compile Include="Commons.Xml.Relaxng\RelaxngException.cs" />
+    <Compile Include="Commons.Xml.Relaxng\RelaxngGrammar.cs" />
+    <Compile Include="Commons.Xml.Relaxng\RelaxngMergedProvider.cs" />
+    <Compile Include="Commons.Xml.Relaxng\RelaxngNameClass.cs" />
+    <Compile Include="Commons.Xml.Relaxng\RelaxngPattern.cs" />
+    <Compile Include="Commons.Xml.Relaxng\RelaxngPatternType.cs" />
+    <Compile Include="Commons.Xml.Relaxng\RelaxngReader.cs" />
+    <Compile Include="Commons.Xml.Relaxng\RelaxngValidatingReader.cs" />
+    <Compile Include="Commons.Xml.Relaxng\XsdDatatypeProvider.cs" />
+    <Compile Include="Commons.Xml\XmlResolver.cs" />
+    <Compile Include="Commons.Xml\Extensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="README" />
+    <None Include="Commons.Xml.Relaxng.Inference\RelaxngInferenceDesign.txt" />
+    <None Include="Commons.Xml.Relaxng.Rnc\RncParser.jay" />
+    <None Include="resources\copying.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Commons.Xml\" />
+    <Folder Include="Commons.Xml.Nvdl\" />
+    <Folder Include="Commons.Xml.Relaxng.Derivative\" />
+    <Folder Include="Commons.Xml.Relaxng.Inference\" />
+    <Folder Include="Commons.Xml.Relaxng.Rnc\" />
+    <Folder Include="resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resources\relaxng.rng">
+      <LogicalName>relaxng.rng</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
