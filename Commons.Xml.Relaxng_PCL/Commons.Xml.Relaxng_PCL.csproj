@@ -7,7 +7,7 @@
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>Commons.Xml.Relaxng_PCL</RootNamespace>
-    <AssemblyName>Commons.Xml.Relaxng_PCL</AssemblyName>
+    <AssemblyName>Commons.Xml.Relaxng</AssemblyName>
     <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -160,6 +160,7 @@
       <Link>resources\copying.html</Link>
     </None>
     <None Include="project.json" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="..\Commons.Xml.Relaxng\resources\relaxng.rng">
